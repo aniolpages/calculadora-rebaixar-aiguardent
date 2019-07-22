@@ -1,0 +1,133 @@
+<!doctype html>
+
+<!--- © 2019 Aniol Pagès--->
+
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>aiguardent</title>
+	<style type="text/css">
+		body {
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		div {
+			box-sizing: border-box;
+  width: 100%;
+
+  border: 12px solid white;
+  padding: 20px;
+			
+  
+}
+		h1 {
+			
+			font-family: Helvetica, sans-serif;
+			font-weight: 900;
+			text-align: center;
+			color: white;
+		}
+		h4 {
+			
+			font-family: Helvetica, sans-serif;
+			
+			text-align: center;
+			color: white;
+		}
+		h2 {
+			
+			font-family: Helvetica, sans-serif;
+			font-weight: 900;
+			
+			color: white;
+		}
+		h3 {
+			
+			font-family: Helvetica, sans-serif;
+			font-weight: 500;
+			
+			color: white;
+		}
+		input {
+			display: inline-block;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.25);
+  border: none;
+  border-radius: 2px;
+  margin: 0px auto;
+  transition:background-color 0.5s ease;
+			font-size: 16px;
+}
+		
+		
+	
+	</style>
+</head>
+
+<body bgcolor="#93613F">
+	<div class="app_frame">
+	<h1>Com rebaixar l'aiguardent de la ratafia?</h1>
+		
+		<h4>Amb aquesta calculadora podràs saber fàcilment quants mil·lilitres d'aigua has d'afegir a la teva ratafia per aconseguir una graduació de 25º.</h4>
+		<br>
+		<form>
+			<h3>Volum (en mL) d'aiguardent que s'ha de rebaixar:</h3>
+		<input type="text" name="a_in" id="a_in" placeholder="Volum en mL..." onkeyup="novesDades()" onchange="novesDades()">
+			<br>
+			<h3>% d'alcohol de l'aiguardent:</h3>
+			<input type="text" name="b_in" id="b_in" placeholder="% d'alcohol..." onkeyup="novesDades()" onchange="novesDades()">
+			<br>
+			<h3>Sucre (en grams) afegit per litre:</h3>
+			<input type="text" name="g_in" id="g_in" placeholder="Sucre en grams..." onkeyup="novesDades()" onchange="novesDades()">
+		
+		</form>
+		<h2 id="resultat"></h2>
+	</div>
+	<script>
+	function novesDades() {
+		var A = document.getElementsByName("a_in") [0].value;
+		var B = document.getElementsByName("b_in") [0].value;
+		var S = document.getElementsByName("g_in") [0].value;
+		let Y = B / "100";
+		let C = A * Y;
+		let D = C / "0.25";
+		let E = D - A;
+		let Z = D / "1000";
+		let X = S * Z;
+		let G = X * "0.6";
+		let H = E - G;
+		document.getElementById('resultat').innerHTML = "Has d'afegir " + H + " mL d'aigua a la teva ratafia.";
+		
+		
+	}
+		function setInputFilter(textbox, inputFilter) {
+  ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
+    textbox.addEventListener(event, function() {
+      if (inputFilter(this.value)) {
+        this.oldValue = this.value;
+        this.oldSelectionStart = this.selectionStart;
+        this.oldSelectionEnd = this.selectionEnd;
+      } else if (this.hasOwnProperty("oldValue")) {
+        this.value = this.oldValue;
+        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+      }
+    });
+  });
+}
+
+setInputFilter(document.getElementById("b_in"), function(value) {
+  return /^\d*\.?\d*$/.test(value);
+});
+		setInputFilter(document.getElementById("a_in"), function(value) {
+  return /^\d*\.?\d*$/.test(value);
+});
+		setInputFilter(document.getElementById("g_in"), function(value) {
+  return /^\d*\.?\d*$/.test(value);
+});
+	</script>
+</body>
+</html>

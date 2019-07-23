@@ -119,8 +119,9 @@
 		let X = S * Z;
 		let G = X * "0.6";
 		let H = E - G;
+		let J = Math.round(X * 100) / 100
 		let R = Math.round(H * 100) / 100
-		document.getElementById('resultat').innerHTML = "Has d'afegir " + R + " ml d'aigua a la teva ratafia.";
+		document.getElementById('resultat').innerHTML = "Has d'afegir " + R + " ml d'aigua i " + J + " g de sucre a la teva ratafia.";
 		
 		
 	}

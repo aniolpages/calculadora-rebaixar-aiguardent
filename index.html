@@ -21,7 +21,6 @@
 		div {
 			box-sizing: border-box;
   width: 100%;
-
   border: 12px solid white;
   padding: 20px;
 			
@@ -81,11 +80,14 @@
 		<h4>Amb aquesta calculadora podràs saber fàcilment quants mil·lilitres d'aigua has d'afegir a la teva ratafia per aconseguir una graduació de 25º.</h4>
 		<br>
 		<form>
-			<h3>Volum (en mL) d'aiguardent que s'ha de rebaixar:</h3>
-		<input type="text" name="a_in" id="a_in" placeholder="Volum en mL..." onkeyup="novesDades()" onchange="novesDades()">
+			<h3>Volum (en ml) d'aiguardent que s'ha de rebaixar:</h3>
+		<input type="text" name="a_in" id="a_in" placeholder="Volum en ml..." onkeyup="novesDades()" onchange="novesDades()">
 			<br>
 			<h3>% d'alcohol de l'aiguardent:</h3>
 			<input type="text" name="b_in" id="b_in" placeholder="% d'alcohol..." onkeyup="novesDades()" onchange="novesDades()">
+			<br>
+			<h3>% d'alcohol desitjat:</h3>
+			<input type="text" name="n_in" id="n_in" placeholder="% d'alcohol..." onkeyup="novesDades()" onchange="novesDades()">
 			<br>
 			<h3>Sucre (en grams) afegit per litre:</h3>
 			<input type="text" name="g_in" id="g_in" placeholder="Sucre en grams..." onkeyup="novesDades()" onchange="novesDades()">
@@ -98,15 +100,18 @@
 		var A = document.getElementsByName("a_in") [0].value;
 		var B = document.getElementsByName("b_in") [0].value;
 		var S = document.getElementsByName("g_in") [0].value;
+		var N = document.getElementsByName("n_in") [0].value;
+		let M = N / "100";
 		let Y = B / "100";
 		let C = A * Y;
-		let D = C / "0.25";
+		let D = C / M;
 		let E = D - A;
 		let Z = D / "1000";
 		let X = S * Z;
 		let G = X * "0.6";
 		let H = E - G;
-		document.getElementById('resultat').innerHTML = "Has d'afegir " + H + " mL d'aigua a la teva ratafia.";
+		let R = Math.round(H * 100) / 100
+		document.getElementById('resultat').innerHTML = "Has d'afegir " + R + " ml d'aigua a la teva ratafia.";
 		
 		
 	}
@@ -124,7 +129,6 @@
     });
   });
 }
-
 setInputFilter(document.getElementById("b_in"), function(value) {
   return /^\d*\.?\d*$/.test(value);
 });
@@ -132,6 +136,9 @@ setInputFilter(document.getElementById("b_in"), function(value) {
   return /^\d*\.?\d*$/.test(value);
 });
 		setInputFilter(document.getElementById("g_in"), function(value) {
+  return /^\d*\.?\d*$/.test(value);
+});
+		setInputFilter(document.getElementById("n_in"), function(value) {
   return /^\d*\.?\d*$/.test(value);
 });
 	</script>

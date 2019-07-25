@@ -88,17 +88,19 @@
 		<form>
 			<h3>Volum d'aiguardent que s'ha de rebaixar:</h3>
 			<h5>Atenció: després de la maceració i filtratge el volum i el grau de l’aiguardent haurà disminuït en relació a la quantitat i grau inicial.</h5>
-		<input type="text" name="a_in" id="a_in" placeholder="Volum en ml..." onkeyup="novesDades()" onchange="novesDades()">
+		<input type="text" name="a_in" id="a_in" placeholder="Volum en ml...">
 			<br>
 			<h3>Graduació d'alcohol de l'aiguardent:</h3>
 			<h5>Nota: es mesura amb un alcoholímitre, sempre que l’aiguardent no porti o hi haguem afegit sucre.</h5>
-			<input type="text" name="b_in" id="b_in" placeholder="% d'alcohol..." onkeyup="novesDades()" onchange="novesDades()">
+			<input type="text" name="b_in" id="b_in" placeholder="% d'alcohol...">
 			<br>
 			<h3>Graduació d'alcohol desitjada:</h3>
-			<input type="text" name="n_in" id="n_in" placeholder="% d'alcohol..." onkeyup="novesDades()" onchange="novesDades()">
+			<input type="text" name="n_in" id="n_in" placeholder="% d'alcohol...">
 			<br>
 			<h3>Sucre que vols afegir per litre:</h3>
-			<input type="text" name="g_in" id="g_in" placeholder="Sucre en grams..." onkeyup="novesDades()" onchange="novesDades()">
+			<input type="text" name="g_in" id="g_in" placeholder="Sucre en grams...">
+			<br>
+			<button class="bt" onclick="novesDades()">Calcular</button>
 		
 		</form>
 		<h2 id="resultat"></h2>

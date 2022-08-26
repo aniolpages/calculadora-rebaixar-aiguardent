@@ -38,3 +38,28 @@ setInputFilter(document.getElementById("b_in"), function (e) {
 }), setInputFilter(document.getElementById("n_in"), function (e) {
     return /^\d*\.?\d*$/.test(e)
 });
+
+document.getElementById("a_in").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("b_in").focus();
+    }
+});
+document.getElementById("b_in").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("n_in").focus();
+    }
+});
+document.getElementById("n_in").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("g_in").focus();
+    }
+});
+document.getElementById("g_in").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("g_in").blur();
+    }
+});

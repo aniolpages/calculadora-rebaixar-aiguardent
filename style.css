@@ -33,6 +33,7 @@ body {
 .nota {
   font-size: 12px;
   margin-top: 2px;
+  color: #666;
 }
 .divC {
   display: flex;
@@ -46,18 +47,22 @@ input {
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ddd;
+  background-color: #e1e1e1;
   border: solid 0px #111;
   margin: 0px auto;
   font-size: 16px;
   border-radius: 10px;
   margin-top: 4px;
   height: 50px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.0) 0 5px 10px;
   outline: none !important;
-  transition: 0.25s ease-in-out;
+  transition:  0.1s;
   position: relative;
   font-weight: bold;
+}
+::placeholder {
+  color: #888;
+  font-weight: 400;
 }
 a {
   color: #666;
@@ -69,7 +74,7 @@ a:hover {
   color: #222;
 }
 input:focus {
-  box-shadow: rgba(0, 0, 0, 0.12) 0 5px 13px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 3px 10px;
   top: -2px;
 }
 .app_frame {
@@ -118,6 +123,10 @@ input:focus {
   font-size: 14px;
   color: #666;
 }
+.subtitol {
+  margin-top: 2px;
+  color: #666;
+}
 @media only screen and (max-width: 700px) {
   .d {
     display: block;
@@ -145,8 +154,11 @@ input:focus {
     background-color: #191919;
   }
   input {
-    background-color: #3a3a3a;
+    background-color: #313131;
     color: #eee;
+  }
+  ::placeholder {
+    color: #888;
   }
   a {
     color: #999;
@@ -156,5 +168,11 @@ input:focus {
   }
   #f_v {
     color: #bbb;
+  }
+  .nota {
+    color: #999;
+  }
+  .subtitol {
+    color: #999;
   }
 }

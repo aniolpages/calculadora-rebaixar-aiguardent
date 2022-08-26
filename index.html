@@ -18,33 +18,33 @@
 	<body>
 		<div id="ti">
 			<div id="t">
-				<p style="font-weight: 700; margin: 0;" id="titol">Calculadora per rebaixar l'aiguardent</p>
-				<p style="margin-top: 2px;">Amb aquesta calculadora podràs saber fàcilment quants mil·lilitres d'aigua i grams de sucre has d'afegir a la teva ratafia per aconseguir la graduació d'alcohol desitjada.<br>La graduació desitjada hauria de ser entre 26% i 28%, i 150 g de sucre per litre (es pot incrementar si es troba poc dolça).</p>
+				<p id="titol">Calculadora per rebaixar l'aiguardent</p>
+				<p style="margin-top: 2px;">Calcula fàcilment quanta aigua i sucre has d'afegir a la teva ratafia per aconseguir la graduació d'alcohol desitjada.</p>
 				<br>
 				<div class="d">
 					<div class="g">
-						<p style="font-weight: 600; margin: 0;">Volum d'aiguardent actual</p>
-						<p style="font-size: 12px; margin-top: 2px;">NOTA: després de la maceració i filtratge el volum i el grau de l’aiguardent haurà disminuït respecte l'inicial.</p>
+						<p class="seccions">Volum d'aiguardent actual</p>
+						<p class="nota">NOTA: després de la maceració i filtratge el volum i el grau de l’aiguardent haurà disminuït respecte l'inicial.</p>
 						<input type="number" id="a_in" number placeholder="1000 (ml)" onkeyup="novesDades()" onchange="novesDades()">
 					</div>
 					<div class="f">
-						<p style="font-weight: 600; margin: 0;">Graduació d'alcohol actual</p>
-						<p style="font-size: 12px; margin-top: 2px;">NOTA: es mesura amb un alcoholímitre, sempre que l’aiguardent no porti o hi haguem afegit sucre.</p>
+						<p class="seccions">Graduació d'alcohol actual</p>
+						<p class="nota">NOTA: es mesura amb un alcoholímitre, sempre que l’aiguardent no porti o hi haguem afegit sucre.</p>
 						<input type="number" id="b_in" number placeholder="29 (%)" onkeyup="novesDades()" onchange="novesDades()">
 					</div>
 				</div>
 				<div class="d">
 					<div class="g">
-						<p style="font-weight: 600; margin: 0;">Graduació d'alcohol desitjada</p>
+						<p class="seccions">Graduació d'alcohol desitjada</p>
 						<input type="number" id="n_in" number placeholder="24 (%)" onkeyup="novesDades()" onchange="novesDades()">
 					</div>
 					<div class="f">
-						<p style="font-weight: 600; margin: 0;">Sucre que vols afegir per litre</p>
+						<p class="seccions">Sucre que vols afegir per litre</p>
 						<input type="number" id="g_in" number placeholder="150 (g)" onkeyup="novesDades()" onchange="novesDades()">
 					</div>
 				</div>
 				<div id="r" style="margin-top: 50px; display: none; opacity: 0;">
-					<p style="font-weight: 700; font-size: 30px; margin-bottom: 0;">Afegeix</p>
+					<p style="font-size: 18px; margin-bottom: 0;">Afegeix</p>
 					<div class="d">
 						<div class="g">
 							<p id="f_a" style="font-weight: 600; font-size: 34px; margin: 0;"></p>
@@ -55,14 +55,14 @@
 							<p style="margin-top: 2px; font-size: 12px;">de sucre</p>
 						</div>
 					</div>
-					<p id="f_v" style="font-size: 14px;"></p>
+					<p id="f_v"></p>
 				</div>
 			</div>
 		</div>
 		<br>
-		<center>
+		<div class="divC">
 			<a href="https://ratafia.cat" target="_blank" style="font-size: 12px;">© Confraria de la Ratafia</a>
-		</center>
+		</div>
 		<br>
 		<script type="text/javascript" src="script.js"></script>
 	</body>

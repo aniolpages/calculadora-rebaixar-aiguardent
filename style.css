@@ -9,6 +9,22 @@ body {
 }
 #titol {
 	font-size: 37px;
+	font-weight: 700;
+	margin: 0;
+}
+.seccions {
+	font-weight: 600;
+	margin: 0;
+}
+.nota {
+	font-size: 12px;
+	margin-top: 2px;
+}
+.divC {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 input {
 	display: inline-block;
@@ -17,7 +33,7 @@ input {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: #ddd;
-	border: solid 2px #111;
+	border: solid 0px #111;
 	margin: 0px auto;
 	font-size: 16px;
 	border-radius: 10px;
@@ -32,9 +48,11 @@ input {
 a {
 	color: #666;
 	text-decoration: none;
+	transition: color 0.2s ;
 }
 a:hover {
 	text-decoration: underline;
+	color: #222;
 }
 input:focus {
 	box-shadow: rgba(0, 0, 0, 0.12) 0 5px 13px;
@@ -82,6 +100,10 @@ input:focus {
 #r {
 	transition: 0.5s ease-in-out;
 }
+#f_v {
+	font-size: 14px;
+	color: #666;
+}
 @media only screen and (max-width: 700px) {
 	.d {
 		display: block;
@@ -114,5 +136,11 @@ input:focus {
 	}
 	a {
 		color: #999;
+	}
+	a:hover {
+		color: #ccc;
+	}
+	#f_v {
+		color: #bbb;
 	}
 }

@@ -1,0 +1,19 @@
+{
+    "title": "スピリッツ希釈計算機",
+    "subtitle": "希望の度数を達成するために、どれだけの水と砂糖を加える必要があるかを簡単に計算します。",
+    "current_volume": "現在のスピリッツの量",
+    "volume_note": "注：マセレーションと濾過後、スピリッツの量と度数は元の状態より減少します。",
+    "current_alcohol": "現在のアルコール度数",
+    "alcohol_note": "注：スピリッツに糖分が含まれていない、または糖分を加えていない場合にアルコールメーターで測定します。",
+    "desired_alcohol": "目標のアルコール度数",
+    "sugar_amount": "リットルあたりに加える砂糖の量",
+    "add": "追加",
+    "water": "水",
+    "sugar": "砂糖",
+    "developed_by": "Confraria de la Ratafia によって開発。",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "容量 <b>{volume} ml</b>、アルコール度数 <b>{alcohol}%</b> を達成するため。<br><br>ミネラル分の非常に少ない水を使用することを推奨します。濁りを最小限に抑えるために、シロップにスピリッツを注いでください。"
+}

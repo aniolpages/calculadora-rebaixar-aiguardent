@@ -1,0 +1,19 @@
+{
+    "title": "Calculadora de Diluição de Aguardente",
+    "subtitle": "Calcule facilmente quanta água e açúcar precisa adicionar à sua ratafia para atingir a graduação desejada.",
+    "current_volume": "Volume atual de aguardente",
+    "volume_note": "Nota: após maceração e filtração, o volume e a graduação da aguardente terão diminuído em relação ao original.",
+    "current_alcohol": "Graduação alcoólica atual",
+    "alcohol_note": "Nota: medido com um alcoolímetro, desde que a aguardente não contenha açúcar ou não tenhamos adicionado.",
+    "desired_alcohol": "Graduação alcoólica desejada",
+    "sugar_amount": "Açúcar a adicionar por litro",
+    "add": "Adicionar",
+    "water": "de água",
+    "sugar": "de açúcar",
+    "developed_by": "Desenvolvido pela Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "Para obter um volume de <b>{volume} ml</b> com graduação alcoólica de <b>{alcohol}%</b>.<br><br>Recomendamos utilizar água de mineralização muito baixa. Para minimizar a turbidez da ratafia, verta a aguardente no xarope."
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Spirituosen-Verdünnungsrechner",
+    "subtitle": "Berechnen Sie einfach, wie viel Wasser und Zucker Sie Ihrer Ratafia hinzufügen müssen, um den gewünschten Alkoholgehalt zu erreichen.",
+    "current_volume": "Aktuelles Volumen der Spirituose",
+    "volume_note": "Hinweis: Nach der Mazeration und Filtration haben Volumen und Alkoholgehalt der Spirituose im Vergleich zum ursprünglichen Wert abgenommen.",
+    "current_alcohol": "Aktueller Alkoholgehalt",
+    "alcohol_note": "Hinweis: Gemessen mit einem Alkoholmeter, sofern die Spirituose keinen Zucker enthält oder wir keinen Zucker hinzugefügt haben.",
+    "desired_alcohol": "Gewünschter Alkoholgehalt",
+    "sugar_amount": "Zuckerzugabe pro Liter",
+    "add": "Hinzufügen",
+    "water": "Wasser",
+    "sugar": "Zucker",
+    "developed_by": "Entwickelt von der Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "Um ein Volumen von <b>{volume} ml</b> bei einem Alkoholgehalt von <b>{alcohol}%</b> zu erreichen.<br><br>Wir empfehlen die Verwendung von Wasser mit sehr geringer Mineralisation. Um Trübungen in der Ratafia zu minimieren, gießen Sie die Spirituose in den Sirup."
+}

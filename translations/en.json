@@ -1,0 +1,19 @@
+{
+    "title": "Spirit Dilution Calculator",
+    "subtitle": "Easily calculate how much water and sugar you need to add to your ratafia to achieve the desired strength.",
+    "current_volume": "Current volume of spirit",
+    "volume_note": "Note: after maceration and filtration, the volume and strength of the spirit will have decreased from the original.",
+    "current_alcohol": "Current alcohol strength",
+    "alcohol_note": "Note: measured with an alcoholmeter, provided the spirit contains no sugar or we have not added any.",
+    "desired_alcohol": "Desired alcohol strength",
+    "sugar_amount": "Sugar to add per litre",
+    "add": "Add",
+    "water": "of water",
+    "sugar": "of sugar",
+    "developed_by": "Developed by the Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "To achieve a volume of <b>{volume} ml</b> at an alcohol strength of <b>{alcohol}%</b>.<br><br>We recommend using very low-mineralisation water. To minimise cloudiness in the ratafia, pour the spirit into the syrup."
+}

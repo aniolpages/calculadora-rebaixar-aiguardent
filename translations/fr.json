@@ -1,0 +1,19 @@
+{
+    "title": "Calculateur de dilution d'eau-de-vie",
+    "subtitle": "Calculez facilement la quantité d'eau et de sucre à ajouter à votre ratafia pour atteindre le degré souhaité.",
+    "current_volume": "Volume actuel d'eau-de-vie",
+    "volume_note": "Note : après macération et filtration, le volume et le titre de l'eau-de-vie auront diminué par rapport à l'original.",
+    "current_alcohol": "Teneur actuelle en alcool",
+    "alcohol_note": "Note : mesuré avec un alcoomètre, à condition que l'eau-de-vie ne contienne pas de sucre ou que nous n'en ayons pas ajouté.",
+    "desired_alcohol": "Teneur en alcool désirée",
+    "sugar_amount": "Sucre à ajouter par litre",
+    "add": "Ajouter",
+    "water": "d'eau",
+    "sugar": "de sucre",
+    "developed_by": "Développé par la Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "Pour obtenir un volume de <b>{volume} ml</b> avec une teneur en alcool de <b>{alcohol}%</b>.<br><br>Nous recommandons d'utiliser une eau à minéralisation très faible. Pour minimiser la turbidité de la ratafia, versez l'eau-de-vie sur le sirop."
+}

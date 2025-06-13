@@ -1,0 +1,19 @@
+{
+    "title": "Calculadora para rebajar el aguardiente",
+    "subtitle": "Calcula fácilmente cuánta agua y azúcar debes añadir a tu ratafia para conseguir la graduación deseada.",
+    "current_volume": "Volumen de aguardiente actual",
+    "volume_note": "Nota: después de la maceración y filtrado el volumen y el grado del aguardiente habrá disminuido respecto al inicial.",
+    "current_alcohol": "Graduación de alcohol actual",
+    "alcohol_note": "Nota: se mide con un alcoholímetro, siempre que el aguardiente no lleve o hayamos añadido azúcar.",
+    "desired_alcohol": "Graduación de alcohol deseada",
+    "sugar_amount": "Azúcar que quieres añadir por litro",
+    "add": "Añade",
+    "water": "de agua",
+    "sugar": "de azúcar",
+    "developed_by": "Desarrollado por la Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "Para conseguir un volumen de <b>{volume} ml</b> a una graduación de <b>{alcohol} %</b>. <br><br>Recomendamos utilizar agua de mineralización muy débil. Para minimizar el enturbiamiento de la ratafia, añade el aguardiente sobre el jarabe."
+}

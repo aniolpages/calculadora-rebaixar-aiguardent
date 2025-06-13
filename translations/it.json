@@ -1,0 +1,19 @@
+{
+    "title": "Calcolatrice di diluizione degli spiriti",
+    "subtitle": "Calcola facilmente quanta acqua e zucchero devi aggiungere alla tua ratafia per ottenere la gradazione desiderata.",
+    "current_volume": "Volume attuale di distillato",
+    "volume_note": "Nota: dopo la macerazione e la filtrazione, volume e gradazione del distillato saranno diminuiti rispetto all'originale.",
+    "current_alcohol": "Gradazione alcolica attuale",
+    "alcohol_note": "Nota: misurata con un alcolimetro, purché il distillato non contenga zucchero o non ne sia stato aggiunto.",
+    "desired_alcohol": "Gradazione alcolica desiderata",
+    "sugar_amount": "Zucchero da aggiungere per litro",
+    "add": "Aggiungi",
+    "water": "di acqua",
+    "sugar": "di zucchero",
+    "developed_by": "Sviluppato da Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "Per ottenere un volume di <b>{volume} ml</b> con una gradazione alcolica di <b>{alcohol}%</b>.<br><br>Raccomandiamo di usare acqua a mineralizzazione molto bassa. Per minimizzare l'opacità della ratafia, versa il distillato sullo sciroppo."
+}

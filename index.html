@@ -20,53 +20,65 @@
 		<div id="t">
 			<div class="row">
 				<img src="logo.svg" class="logo" alt="">
-				<div>
-					<p id="titol">Calculadora per rebaixar l'aiguardent</p>
-					<p class="subtitol">Calcula fàcilment quanta aigua i sucre has d'afegir a la teva ratafia per
-						aconseguir
-						la
-						graduació desitjada.</p>
-				</div>
+					<div style="flex-grow: 1;">
+						<p id="titol" data-translate="title">Calculadora per rebaixar l'aiguardent</p>
+						<p class="subtitol" data-translate="subtitle">Calcula fàcilment quanta aigua i sucre has d'afegir a la teva ratafia per
+							aconseguir
+							la
+							graduació desitjada.</p>
+					</div>
+					<div class="language-selector">
+						<select id="language-select">
+							<option value="ca">Català</option>
+							<option value="es">Español</option>
+							<option value="en">English</option>
+							<option value="fr">Français</option>
+							<option value="de">Deutsch</option>
+							<option value="it">Italiano</option>
+							<option value="pt">Português</option>
+							<option value="jp">日本語</option>
+						</select>
+					</div>
 			</div>
 			<br>
 			<div class="d">
 				<div class="g">
-					<p class="seccions">Volum d'aiguardent actual</p>
-					<p class="nota">Nota: després de la maceració i filtratge el volum i el grau de l’aiguardent haurà
+					<p class="seccions" data-translate="current_volume">Volum d'aiguardent actual</p>
+					<p class="nota" data-translate="volume_note">Nota: després de la maceració i filtratge el volum i el grau de l'aiguardent haurà
 						disminuït respecte a l'inicial.</p>
-					<input type="number" id="a_in" number placeholder="1000 (ml)" onkeyup="novesDades()"
+					<input type="number" id="a_in" number data-translate-placeholder="volume_placeholder" placeholder="1000 (ml)" onkeyup="novesDades()"
 						onchange="novesDades()" enterkeyhint="next" min="1" max="100000">
 				</div>
 				<div class="f">
-					<p class="seccions">Graduació d'alcohol actual</p>
-					<p class="nota">Nota: es mesura amb un alcoholímetre, sempre que l'aiguardent no porti o hi hàgim
+					<p class="seccions" data-translate="current_alcohol">Graduació d'alcohol actual</p>
+					<p class="nota" data-translate="alcohol_note">Nota: es mesura amb un alcoholímetre, sempre que l'aiguardent no porti o hi hàgim
 						afegit sucre.</p>
-					<input type="number" id="b_in" number placeholder="29 (%)" onkeyup="novesDades()"
+					<input type="number" id="b_in" number data-translate-placeholder="alcohol_placeholder" placeholder="29 (%)" onkeyup="novesDades()"
 						onchange="novesDades()" enterkeyhint="next" min="0" max="100">
 				</div>
 			</div>
 			<div class="d">
 				<div class="g">
-					<p class="seccions">Graduació d'alcohol desitjada</p>
-					<input type="number" id="n_in" number placeholder="24 (%)" onkeyup="novesDades()"
+					<p class="seccions" data-translate="desired_alcohol">Graduació d'alcohol desitjada</p>
+					<input type="number" id="n_in" number data-translate-placeholder="desired_placeholder" placeholder="24 (%)" onkeyup="novesDades()"
 						onchange="novesDades()" enterkeyhint="next" min="0" max="100">
 				</div>
 				<div class="f">
-					<p class="seccions">Sucre que vols afegir per litre</p>
-					<input type="number" id="g_in" number placeholder="150 (g)" onkeyup="novesDades()"
+					<p class="seccions" data-translate="sugar_amount">Sucre que vols afegir per litre</p>
+					<input type="number" id="g_in" number data-translate-placeholder="sugar_placeholder" placeholder="150 (g)" onkeyup="novesDades()"
 						onchange="novesDades()" enterkeyhint="done" min="0" max="10000">
 				</div>
 			</div>
 			<div id="r">
-				<p class="ap">Afegeix</p>
+				<p class="ap" data-translate="add">Afegeix</p>
 				<div class="d">
 					<div class="g">
 						<p id="f_a" class="fp"></p>
-						<p class="sv">d'aigua</p>
+						<p class="sv" data-translate="water">d'aigua</p>
 					</div>
 					<div class="f">
 						<p id="f_s" class="fp"></p>
-						<p class="sv">de sucre</p>
+						<p class="sv" data-translate="sugar">de sucre</p>
 					</div>
 				</div>
 				<p id="f_v"></p>
@@ -75,9 +87,10 @@
 	</div>
 	<br>
 	<div class="divC">
-		<a href="https://ratafia.cat" target="_blank">Desenvolupat per la Confraria de la Ratafia.</a>
+		<a href="https://ratafia.cat" target="_blank" data-translate="developed_by">Desenvolupat per la Confraria de la Ratafia.</a>
 	</div>
 	<br>
+	<script type="text/javascript" src="i18n.js"></script>
 	<script type="text/javascript" src="script.js?v=7C1842A9-BE1D-4EBA-89EA-84AF379F4CDB"></script>
 </body>
 

@@ -32,12 +32,12 @@ class I18n {
 
     detectLanguage() {
         const saved = localStorage.getItem('selectedLanguage');
-        if (saved && ['ca', 'es', 'en', 'fr', 'de', 'it', 'pt', 'jp'].includes(saved)) {
+        if (saved && ['ca', 'es', 'en', 'fr', 'de', 'nl', 'it', 'pt', 'no', 'jp'].includes(saved)) {
             return saved;
         }
         
         const browserLang = navigator.language.slice(0, 2);
-        return ['ca', 'es', 'en', 'fr', 'de', 'it', 'pt', 'jp'].includes(browserLang) ? browserLang : 'ca';
+        return ['ca', 'es', 'en', 'fr', 'de', 'nl', 'it', 'pt', 'no', 'jp'].includes(browserLang) ? browserLang : 'ca';
     }
 
     async loadTranslations(lang) {

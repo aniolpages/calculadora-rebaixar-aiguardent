@@ -1,0 +1,19 @@
+{
+    "title": "Spiritus Verdunningscalculator",
+    "subtitle": "Bereken eenvoudig hoeveel water en suiker je aan je ratafia moet toevoegen om de gewenste sterkte te bereiken.",
+    "current_volume": "Huidig volume spiritus",
+    "volume_note": "Opmerking: na maceratie en filtratie zullen volume en sterkte van de spiritus zijn afgenomen ten opzichte van het oorspronkelijke.",
+    "current_alcohol": "Huidig alcoholpercentage",
+    "alcohol_note": "Opmerking: gemeten met een alcoholmeter, mits de spiritus geen suiker bevat of wij geen suiker hebben toegevoegd.",
+    "desired_alcohol": "Gewenst alcoholpercentage",
+    "sugar_amount": "Toe te voegen suiker per liter",
+    "add": "Toevoegen",
+    "water": "water",
+    "sugar": "suiker",
+    "developed_by": "Ontwikkeld door de Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "Om een volume van <b>{volume} ml</b> te bereiken bij een alcoholpercentage van <b>{alcohol}%</b>.<br><br>We raden aan om water met zeer lage mineralisatie te gebruiken. Giet de spiritus in de siroop om troebelheid in de ratafia te minimaliseren."
+}

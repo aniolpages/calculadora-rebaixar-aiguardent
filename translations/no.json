@@ -1,0 +1,19 @@
+{
+    "title": "Spiritusfortynningskalkulator",
+    "subtitle": "Beregn enkelt hvor mye vann og sukker du må tilsette i din ratafia for å oppnå ønsket styrke.",
+    "current_volume": "Nåværende volum av sprit",
+    "volume_note": "Merk: etter maserasjon og filtrering vil volumet og styrken på spriten ha blitt redusert fra det opprinnelige.",
+    "current_alcohol": "Nåværende alkoholstyrke",
+    "alcohol_note": "Merk: måles med en alkoholmeter, forutsatt at spriten ikke inneholder sukker eller at vi ikke har tilsatt noe.",
+    "desired_alcohol": "Ønsket alkoholstyrke",
+    "sugar_amount": "Sukker som skal tilsettes per liter",
+    "add": "Tilsett",
+    "water": "vann",
+    "sugar": "sukker",
+    "developed_by": "Utviklet av Confraria de la Ratafia.",
+    "volume_placeholder": "1000 (ml)",
+    "alcohol_placeholder": "29 (%)",
+    "desired_placeholder": "24 (%)",
+    "sugar_placeholder": "150 (g)",
+    "result_text": "For å oppnå et volum på <b>{volume} ml</b> med en alkoholstyrke på <b>{alcohol}%</b>.<br><br>Vi anbefaler å bruke vann med svært lav mineralisering. For å minimere uklarhet i ratafiaen, hell spriten i sirupen."
+}

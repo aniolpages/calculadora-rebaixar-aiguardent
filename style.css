@@ -206,6 +206,10 @@ input:focus {
   input:focus {
     transform: none;
   }
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body {

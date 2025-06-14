@@ -216,8 +216,11 @@ input:focus {
     background-color: #000;
     color: #ddd;
   }
-  .logo {
-    filter: invert(1);
+  .logo_b {
+    display: none;
+  }
+  .logo_w {
+    display: block !important;
   }
   #t {
     background-color: #191919;

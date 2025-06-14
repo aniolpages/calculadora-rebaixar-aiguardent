@@ -192,6 +192,7 @@ input:focus {
   outline: none;
   transition: background-color 0.15s ease;
   min-width: 120px;
+  color: #000;
 }
 
 .language-selector select:hover {

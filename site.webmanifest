@@ -1,1 +1,1 @@
-{"name":"Calculadora rebaixar aiguardent","short_name":"Calculadora","icons":[{"src":"/android-chrome-192x192.jpg","sizes":"192x192","type":"image/jpg"},{"src":"/android-chrome-512x512.jpg","sizes":"512x512","type":"image/jpg"}],"display":"standalone"}
+{"name":"Calculadora rebaixar aiguardent","short_name":"Calculadora","icons":[{"src":"/assets/android-chrome-192x192.jpg","sizes":"192x192","type":"image/jpg"},{"src":"/assets/android-chrome-512x512.jpg","sizes":"512x512","type":"image/jpg"}],"display":"standalone"}

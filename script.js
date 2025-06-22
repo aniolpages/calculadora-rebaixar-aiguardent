@@ -7,6 +7,41 @@ var i1 = !1,
     i3 = !1,
     i4 = !1,
     fet = !1;
+let calculatorDebounce = null;
+
+const trackCalculatorUsage = () => {
+    if (calculatorDebounce) {
+        clearTimeout(calculatorDebounce);
+    }
+
+    calculatorDebounce = setTimeout(() => {
+        var e = document.getElementById("a_in").value,
+            t = document.getElementById("b_in").value,
+            n = document.getElementById("g_in").value,
+            i = document.getElementById("n_in").value;
+        if (isNaN(n) || isNaN(e) || isNaN(t) || isNaN(i) ||
+            n == Infinity || e == Infinity || t == Infinity || i == Infinity ||
+            e < 0 || n < 0 || t < 0 || i < 0 ||
+            e == "" || n == "" || t == "" || i == "") {
+        } else {
+            if (window.plausible) {
+                window.plausible('calculadora', {
+                    props: {
+                        volum_inicial: e,
+                        graduacio_inicial: t,
+                        graduacio_final: i,
+                        sucre: n
+                    }
+                });
+            }
+        }
+    }, 5000);
+};
+
+document.querySelectorAll('input, select').forEach(input => {
+    input.addEventListener('input', trackCalculatorUsage);
+    input.addEventListener('change', trackCalculatorUsage);
+});
 
 function novesDades() {
     var e = document.getElementById("a_in").value,
@@ -18,12 +53,12 @@ function novesDades() {
     if (isFinite(n) && isFinite(e) && isFinite(t) && !isNaN(e) && !isNaN(n) && !isNaN(t) && e != Infinity && n != Infinity && t != Infinity && document.getElementById("a_in").value.length > 0 && document.getElementById("b_in").value.length > 0 && document.getElementById("g_in").value.length > 0 && document.getElementById("n_in").value.length > 0) {
         document.getElementById("f_a").innerHTML = e + " ml";
         document.getElementById("f_s").innerHTML = n + " g";
-        
-        const resultText = window.i18n ? window.i18n.t('result_text', { volume: t, alcohol: i }) : 
+
+        const resultText = window.i18n ? window.i18n.t('result_text', { volume: t, alcohol: i }) :
             "Per aconseguir un volum de <b>" + t + " ml</b> a una graduació de <b>" + i + " %</b>. <br><br>Recomanem utilitzar aigua de mineralització molt dèbil. Per minimitzar l'enterboliment de la ratafia, afegiu l'aiguardent sobre el xarop.";
-        
+
         document.getElementById("f_v").innerHTML = resultText;
-        
+
         if (1 == i1 && 1 == i2 && 1 == i3 && 1 == i4 && 0 == fet) {
             fet = !0;
             document.getElementById("r").style.display = "block";

@@ -41,6 +41,7 @@ class I18n {
     }
 
     async loadTranslations(lang) {
+        plausible('language', { props: { lang } });
         if (lang === 'ca') {
             this.translations = this.defaultStrings;
             return;
